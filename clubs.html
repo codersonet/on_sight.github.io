@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLUBS & PROJECTS // NIT SIKKIM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <canvas id="mountain-canvas"></canvas>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <span class="brand-title">NIT_SIKKIM</span>
+        <span class="label-mono brand-tag">// ON_SIGHT</span>
+      </a>
+      
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">OVERVIEW</a>
+        <a href="clubs.html" class="nav-link">CLUBS_&_PROJECTS</a>
+        <a href="alumni.html" class="nav-link">ALUMNI_DIRECTORY</a>
+        <a href="metrics.html" class="nav-link">METRICS</a>
+        <a href="companies.html" class="nav-link">RECRUITERS</a>
+      </nav>
+
+      <div class="nav-status">
+        <span class="status-dot"></span>
+        <span class="label-mono">SYS_STATUS: ACTIVE</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <span class="label-mono">// TECHNICAL_SUBSYSTEMS</span>
+      <h1 class="headline-lg">Student Clubs & Live Projects</h1>
+      <p class="body-md">Discover active student-led technical organizations, engineering initiatives, robotics labs, and software deployments at NIT Sikkim.</p>
+    </section>
+
+    <section class="clubs-section">
+      <div class="section-header">
+        <span class="label-mono">// FILTER_NODES</span>
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">ALL_SYSTEMS</button>
+          <button class="filter-btn" data-filter="tech">CODING_&_AI</button>
+          <button class="filter-btn" data-filter="robotics">ROBOTICS_&_HW</button>
+          <button class="filter-btn" data-filter="creative">DESIGN_&_CULTURE</button>
+        </div>
+      </div>
+
+      <div class="grid-container projects-grid" id="projects-container">
+        <!-- Dynamic Cards Injected via JS -->
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-overlay" id="project-modal">
+    <div class="glass-card modal-content">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <span class="label-mono" id="modal-club-tag">CLUB // DETAILED_SPECS</span>
+      <h2 class="headline-lg" id="modal-title">Project Title</h2>
+      <p class="body-md" id="modal-description">Detailed description will appear here.</p>
+      
+      <div class="modal-metrics">
+        <div>
+          <span class="label-mono">TECH_STACK</span>
+          <p id="modal-stack" class="label-mono text-primary">-</p>
+        </div>
+        <div>
+          <span class="label-mono">STATUS</span>
+          <p id="modal-status" class="label-mono text-primary">-</p>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <a href="#" class="btn btn-primary" target="_blank">REQUEST_COLLABORATION</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="brand-title">NIT_SIKKIM_NEXUS</span>
+        <p class="label-mono text-muted">NATIONAL INSTITUTE OF TECHNOLOGY SIKKIM // RAVANGLA 737139</p>
+      </div>
+
+      <div class="footer-links">
+        <span class="label-mono">TERMINAL_LINKS</span>
+        <a href="index.html">OVERVIEW</a>
+        <a href="clubs.html">CLUBS</a>
+        <a href="alumni.html">ALUMNI</a>
+        <a href="companies.html">RECRUITERS</a>
+      </div>
+
+      <div class="footer-meta">
+        <span class="label-mono">&copy; 2026 NIT SIKKIM STUDENT COMMUNITY</span>
+        <span class="label-mono text-muted">MADE WITH ❤️ FOR INNOVATION</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
