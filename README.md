@@ -1,1 +1,0 @@
-# nit-sikkim-on_sight
