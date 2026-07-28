@@ -566,7 +566,7 @@ main {
   align-items: center;
   gap: 60px;
   width: max-content;
-  animation: marquee-slide 35s linear infinite;
+  animation: marquee-slide 80s linear infinite;
 }
 
 .marquee-track:hover {
