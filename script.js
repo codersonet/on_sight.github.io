@@ -274,3 +274,63 @@ function initModal() {
     if (e.target === modal) modal.classList.remove("active");
   });
 }
+
+/*MARQUEE LOOP LOGIC*/
+function initInfiniteMarquee() {
+  const track = document.getElementById("marquee-track");
+  if (track) {
+    track.innerHTML += track.innerHTML;
+  }
+}
+
+/*GLOBAL FOOTER INJECTOR*/
+/* STREAMING_CHUNK:Initializing footer injection logic */
+document.addEventListener("DOMContentLoaded", () => {
+  // Call the function
+  loadGlobalFooter();
+});
+
+function loadGlobalFooter() {
+  const footerContainer = document.getElementById("footer-container");
+  
+  if (!footerContainer) {
+    console.warn("DEBUG: footer-container NOT FOUND. Check your HTML for <div id='footer-container'></div>");
+    return;
+  }
+  footerContainer.innerHTML = `
+    <footer class="footer glass-card" style="margin-top: 4rem; border-radius: 16px 16px 0 0; border-bottom: none;">
+      <div class="footer-container">
+        <!-- Brand Section -->
+        <div class="footer-brand">
+          <span class="brand-title glow-text">NIT_SIKKIM</span>
+          <p class="label-mono text-muted" style="margin-top: 8px;">NATIONAL INSTITUTE OF TECHNOLOGY SIKKIM</p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="footer-links">
+          <span class="label-mono text-muted">[ TERMINAL_LINKS ]</span>
+          <a href="index.html" class="nav-link">OVERVIEW</a>
+          <a href="clubs.html" class="nav-link">CLUBS</a>
+          <a href="alumni.html" class="nav-link">ALUMNI</a>
+          <a href="metrics.html" class="nav-link">METRICS</a>
+          <a href="companies.html" class="nav-link">RECRUITERS</a>
+        </div>
+
+        <!-- Newsletter HUD Section -->
+        <div class="footer-newsletter">
+          <span class="label-mono text-muted" style="margin-bottom: 8px; display: block;">[ NETWORK_SYNC ]</span>
+          <p class="label-mono text-muted">Establish connection for the latest campus updates, metrics, and alumni networking opportunities.</p>
+          <form class="hud-form" onsubmit="event.preventDefault(); this.innerHTML = '<span class=\\'label-mono glow-text\\' style=\\'color: var(--primary);\\'>[✓] CONNECTION_ESTABLISHED</span>';">
+            <input type="email" class="hud-input" placeholder="ENTER_EMAIL" required>
+            <button type="submit" class="hud-submit">INITIATE</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <span class="label-mono text-muted">&copy; ${new Date().getFullYear()} NIT SIKKIM STUDENT COMMUNITY</span>
+        <span class="label-mono text-muted">MADE WITH ❤️ FOR SIKKIMITES</span>
+      </div>
+    </footer>
+  `;
+}

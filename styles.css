@@ -712,6 +712,49 @@ main {
   flex-wrap: wrap;
   gap: 12px;
 }
+/* Footer Newsletter HUD */
+.footer-newsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+.hud-form {
+  display: flex;
+  gap: 8px;
+}
+
+.hud-input {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--outline-variant);
+  color: var(--on-surface);
+  padding: 8px 12px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  border-radius: 4px;
+}
+
+.hud-submit {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 8px 16px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hud-submit:hover {
+  background: var(--primary);
+  color: #000;
+}
+
+/* Adjust grid for the new newsletter column */
+.footer-container {
+  grid-template-columns: 1fr 1fr 1fr; /* Ensures equal spacing for columns */
+}
 
 /* Responsive Styles */
 @media (max-width: 868px) {
