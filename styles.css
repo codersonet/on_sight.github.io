@@ -835,15 +835,22 @@ color: var(--primary);
 box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
 }
 
-/* STREAMING_CHUNK:Refining footer metadata spacing */
+/* footer metadata */
 .footer-meta {
-grid-column: 1 / -1;
-display: flex;
-justify-content: space-between;
-margin-top: 40px;
-padding-top: 24px;
-border-top: 1px solid var(--outline-variant);
-font-family: var(--font-mono);
-font-size: 0.8rem;
-opacity: 0.8;
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--outline-variant);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  opacity: 0.8;
+  
+  /* THESE LINES TO ALIGN WITH CONTENT */
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
 }
