@@ -1,6 +1,4 @@
-/* ==========================================================================
-   SYNTHETIC HORIZON DESIGN SYSTEM (MONOCHROMATIC TECHNICAL / GLASSMORPHIC HUD)
-   ========================================================================== */
+/*NIT_SIKKIM ON_SIGHT*/
 
 :root {
   /* Design Tokens - Palette */
@@ -670,104 +668,137 @@ main {
   border-radius: var(--radius-sm);
 }
 
-/* Footer */
+/*Footer */
 .footer {
-  border-top: 1px solid var(--outline-variant);
-  padding: 64px 0 32px;
-  background: var(--surface-container-lowest);
-  margin-top: auto;
+border-top: 1px solid var(--outline-variant);
+padding: 64px 0 32px;
+background: var(--surface-container-lowest);
+margin-top: auto;
 }
 
 .footer-container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 var(--gutter);
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 32px;
+max-width: var(--max-width);
+margin: 0 auto;
+padding: 0 var(--gutter);
+display: grid;
+grid-template-columns: 1.5fr 1fr 1fr;
+gap: 32px;
 }
 
+/* terminal_links: Centered */
 .footer-links {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 12px;
 }
 
 .footer-links a {
-  color: var(--on-surface-variant);
-  text-decoration: none;
-  font-size: 0.85rem;
+color: var(--on-surface-variant);
+text-decoration: none;
+font-family: var(--font-mono);
+font-size: 0.85rem;
+transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: var(--primary);
+color: var(--primary);
 }
 
-.footer-meta {
-  grid-column: 1 / -1;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 32px;
-  border-top: 1px solid rgba(255,255,255,0.05);
-  flex-wrap: wrap;
-  gap: 12px;
-}
-/* Footer Newsletter HUD */
+/* STREAMING_CHUNK:Styling footer newsletter and social components */
+
+/* Newsletter HUD Container */
 .footer-newsletter {
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
+gap: 12px;
 }
 
 .hud-form {
-  display: flex;
-  gap: 8px;
+display: flex;
+flex-direction: column;
+gap: 8px;
 }
 
 .hud-input {
-  flex: 1;
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid var(--outline-variant);
-  color: var(--on-surface);
-  padding: 8px 12px;
-  font-family: 'Space Mono', monospace;
-  font-size: 0.8rem;
-  border-radius: 4px;
+background: var(--surface-container-low);
+border: 1px solid var(--outline-variant);
+color: var(--on-surface);
+padding: 12px;
+font-family: var(--font-mono);
+font-size: 0.8rem;
+border-radius: var(--radius-default);
+width: 100%;
+position: relative;
+overflow: hidden;
+transition: all 0.3s ease;
+}
+
+/* Shining Effect for Input */
+.hud-input::after {
+content: '';
+position: absolute;
+top: 0;
+left: -100%;
+width: 50%;
+height: 100%;
+background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+transition: 0.5s;
+}
+
+.hud-input:hover::after {
+left: 100%;
 }
 
 .hud-submit {
-  background: transparent;
-  border: 1px solid var(--primary);
-  color: var(--primary);
-  padding: 8px 16px;
-  font-family: 'Space Mono', monospace;
-  font-size: 0.8rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
+background: transparent;
+border: 1px solid var(--primary);
+color: var(--primary);
+padding: 10px 20px;
+font-family: var(--font-mono);
+font-weight: 700;
+cursor: pointer;
+border-radius: var(--radius-default);
+transition: all 0.3s ease;
 }
 
 .hud-submit:hover {
-  background: var(--primary);
-  color: #000;
+background: var(--primary);
+color: var(--on-primary);
 }
 
-/* Adjust grid for the new newsletter column */
-.footer-container {
-  grid-template-columns: 1fr 1fr 1fr; /* Ensures equal spacing for columns */
+/* Social Icons (Glass-card themed) */
+.footer-social {
+display: flex;
+gap: 16px;
+margin-top: 16px;
 }
 
-/* Responsive Styles */
-@media (max-width: 868px) {
-  .hero-section {
-    grid-template-columns: 1fr;
-    padding-top: 40px;
-  }
-  
-  .nav-links {
-    display: none;
-  }
+/* Base style for the icon links */
+.social-icon {
+width: 48px;
+height: 48px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+background: rgba(31, 32, 31, 0.55);
+backdrop-filter: blur(25px);
+-webkit-backdrop-filter: blur(25px);
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: var(--radius-lg);
+color: var(--on-surface);
+font-size: 1.5rem; /* Increased size so they aren't "ant-sized" */
+transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+position: relative;
+overflow: hidden;
+}
 
-  .footer-container {
-    grid-template-columns: 1fr;
-  }
+/* Hover effect matching your glass-card logic */
+.social-icon:hover {
+background: var(--surface-container-high);
+border-color: var(--primary);
+transform: translateY(-2px);
+color: var(--primary);
+box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
 }

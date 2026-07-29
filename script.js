@@ -298,12 +298,12 @@ function loadGlobalFooter() {
     return;
   }
   footerContainer.innerHTML = `
-    <footer class="footer glass-card" style="margin-top: 4rem; border-radius: 16px 16px 0 0; border-bottom: none;">
+    <footer class="footer glass-card">
       <div class="footer-container">
         <!-- Brand Section -->
         <div class="footer-brand">
           <span class="brand-title glow-text">NIT_SIKKIM</span>
-          <p class="label-mono text-muted" style="margin-top: 8px;">NATIONAL INSTITUTE OF TECHNOLOGY SIKKIM</p>
+          <p class="label-mono text-muted">NATIONAL INSTITUTE OF TECHNOLOGY SIKKIM</p>
         </div>
 
         <!-- Links Section -->
@@ -318,12 +318,21 @@ function loadGlobalFooter() {
 
         <!-- Newsletter HUD Section -->
         <div class="footer-newsletter">
-          <span class="label-mono text-muted" style="margin-bottom: 8px; display: block;">[ NETWORK_SYNC ]</span>
+          <span class="label-mono text-muted">[ NETWORK_SYNC ]</span>
           <p class="label-mono text-muted">Establish connection for the latest campus updates, metrics, and alumni networking opportunities.</p>
+          
           <form class="hud-form" onsubmit="event.preventDefault(); this.innerHTML = '<span class=\\'label-mono glow-text\\' style=\\'color: var(--primary);\\'>[✓] CONNECTION_ESTABLISHED</span>';">
             <input type="email" class="hud-input" placeholder="ENTER_EMAIL" required>
             <button type="submit" class="hud-submit">INITIATE</button>
           </form>
+
+          <!-- Social Icons -->
+          <div class="footer-social">
+            <a href="https://github.com/nitsikkim" class="social-icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/nitsikkim" class="social-icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/school/nit-sikkim/" class="social-icon" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/NITSikkim" class="social-icon" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          </div>
         </div>
       </div>
 
