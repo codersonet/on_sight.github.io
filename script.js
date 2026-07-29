@@ -298,7 +298,7 @@ function loadGlobalFooter() {
     return;
   }
   footerContainer.innerHTML = `
-    <footer class="footer glass-card">
+    <footer class="footer">
       <div class="footer-container">
         <!-- Brand Section -->
         <div class="footer-brand">
