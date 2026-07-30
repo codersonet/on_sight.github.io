@@ -338,7 +338,7 @@ function loadGlobalFooter() {
 
       <div class="footer-meta">
         <span class="label-mono text-muted">&copy; ${new Date().getFullYear()} NIT SIKKIM STUDENT COMMUNITY</span>
-        <span class="label-mono text-muted">MADE WITH ❤️ FOR SIKKIMITES</span>
+        <span class="label-mono text-muted">MADE WITH 🤍 FOR SIKKIMITES</span>
       </div>
     </footer>
   `;
