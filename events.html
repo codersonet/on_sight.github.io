@@ -1,39 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ALUMNI DIRECTORY // NIT SIKKIM</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALUMNI DIRECTORY // NIT SIKKIM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <canvas id="mountain-canvas"></canvas>
 
-  <canvas id="mountain-canvas"></canvas>
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="brand">
+          <span class="brand-title">NIT_SIKKIM</span>
+          <span class="label-mono brand-tag">// ON_SIGHT</span>
+        </a>
 
-  <header class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="brand">
-        <span class="brand-title">NIT_SIKKIM</span>
-        <span class="label-mono brand-tag">// ON_SIGHT</span>
-      </a>
-      
-      <nav class="nav-links">
-        <a href="index.html" class="nav-link">OVERVIEW</a>
-        <a href="clubs.html" class="nav-link">CLUBS_&_PROJECTS</a>
-        <a href="alumni.html" class="nav-link">ALUMNI_DIRECTORY</a>
-        <a href="metrics.html" class="nav-link">METRICS</a>
-        <a href="events.html" class="nav-link">EVENTS</a>
-      </nav>
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">OVERVIEW</a>
+          <a href="clubs.html" class="nav-link">CLUBS_&_PROJECTS</a>
+          <a href="alumni.html" class="nav-link">ALUMNI_DIRECTORY</a>
+          <a href="metrics.html" class="nav-link">METRICS</a>
+          <a href="events.html" class="nav-link">EVENTS</a>
+        </nav>
 
-      <div class="nav-status">
-        <span class="status-dot"></span>
-        <span class="label-mono">SYS_STATUS: ACTIVE</span>
+        <div class="nav-status">
+          <span class="status-dot"></span>
+          <span class="label-mono">SYS_STATUS: ACTIVE</span>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
+    <footer class="footer">
+      <div id="footer-container"></div>
+    </footer>
 
-</body>
+    <script src="script.js"></script>
+  </body>
+</html>
