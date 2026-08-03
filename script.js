@@ -313,6 +313,7 @@ function loadGlobalFooter() {
           <a href="clubs.html" class="nav-link">CLUBS</a>
           <a href="alumni.html" class="nav-link">ALUMNI</a>
           <a href="metrics.html" class="nav-link">METRICS</a>
+          <a href="events.html" class="nav-link">EVENTS</a>
           <a href="companies.html" class="nav-link">RECRUITERS</a>
         </div>
 
