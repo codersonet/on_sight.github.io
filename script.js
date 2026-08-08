@@ -329,10 +329,10 @@ function loadGlobalFooter() {
 
           <!-- Social Icons -->
           <div class="footer-social">
-            <a href="https://github.com/nitsikkim" class="social-icon" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/nitsikkim" class="social-icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/school/nit-sikkim/" class="social-icon" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://twitter.com/NITSikkim" class="social-icon" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://github.com/opb_nitsikkim" class="social-icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/opb_nitsikkim" class="social-icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/school/opb-nit-sikkim/" class="social-icon" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/opb_nitsikkim" class="social-icon" target="_blank"><i class="fa-brands fa-twitter"></i></a>
             <a href="https://discord.com/invite/MD2sD4yRvw" class="social-icon" target="_blank"><i class="fa-brands fa-discord"></i></a>
           </div>
         </div>
