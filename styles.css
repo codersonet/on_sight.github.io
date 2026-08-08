@@ -854,3 +854,163 @@ box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
   padding-left: var(--gutter);
   padding-right: var(--gutter);
 }
+
+/* Responsive Layout Adjustments */
+@media (max-width: 1024px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-top: 56px;
+  }
+
+  .hero-content {
+    max-width: 720px;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --gutter: 20px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px var(--gutter);
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px 14px;
+  }
+
+  .nav-status {
+    align-self: stretch;
+    justify-content: center;
+    width: fit-content;
+  }
+
+  .page-header {
+    padding: 40px var(--gutter) 24px;
+  }
+
+  .hero-section {
+    padding: 48px var(--gutter) 28px;
+  }
+
+  .glass-card {
+    padding: 24px;
+  }
+
+  .section-header {
+    padding: 0 var(--gutter);
+  }
+
+  .stats-grid,
+  .alumni-grid,
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .card-footer,
+  .hud-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .chip-btn {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-meta {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .modal-content {
+    width: min(92vw, 600px);
+  }
+
+  .modal-metrics {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  :root {
+    --gutter: 16px;
+  }
+
+  .brand-title {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    gap: 8px 12px;
+  }
+
+  .nav-link {
+    font-size: 0.72rem;
+  }
+
+  .headline-xl {
+    font-size: clamp(2rem, 9vw, 2.8rem);
+  }
+
+  .headline-lg {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hud-header {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .topography-graphic {
+    height: 100px;
+  }
+
+  .filter-bar {
+    width: 100%;
+  }
+
+  .filter-btn {
+    flex: 1 1 calc(50% - 8px);
+    text-align: center;
+  }
+
+  .stats-grid,
+  .alumni-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-social {
+    flex-wrap: wrap;
+  }
+
+  .social-icon {
+    width: 44px;
+    height: 44px;
+  }
+}
